@@ -1,0 +1,47 @@
+﻿<Window x:Class="Sportbolt.View.DeletVevoAblak"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sportbolt.View"
+        mc:Ignorable="d"
+        Title="DeletVevoAblak" Height="200" Width="300">
+    <Grid>
+        <Label Content="ID:"
+               Width="50" HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="20,20,0,0"/>
+        <TextBlock x:Name="txbID"
+               Width="150" HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="120,20,0,0"
+                   Text="{Binding Id}"/>
+        
+        <Label Content="Név:"
+               Width="50" HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="20,60,0,0"/>
+        <TextBlock x:Name="txbNev"
+               Width="150" HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="120,60,0,0"
+                   Text="{Binding Nev}"/>
+        <Label Content="Cím:"
+               Width="50" HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="20,100,0,0"/>
+        <TextBlock x:Name="txbCim"
+               Width="150" HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="120,100,0,0"
+                   Text="{Binding Cim}"/>
+        <Button x:Name="btnMegsem" Content="Mégsem"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0,0,30,20" Width="80" Click="btnMegsem_Click" />
+        <Button x:Name="btnTorles" Content="Törlés"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0,0,130,20" Width="80" Click="btnTorles_Click" />
+    </Grid>
+</Window>
